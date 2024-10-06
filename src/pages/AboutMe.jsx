@@ -1,5 +1,5 @@
 import React from "react";
-import profileImage from '../assets/images/profile.jpg'; // Add your profile image in the assets/images folder
+import profileImage from '../assets/images/profile.jpg'; 
 
 const AboutMe = () => (
     <section>
