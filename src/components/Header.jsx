@@ -4,9 +4,11 @@ import bannerImage from '../assets/images/banner.gif'; // Add your banner image 
 
 const Header = () => (
     <header>
-        <h1>Emily Soriano</h1>
-        <Navigation />
+        <div className="banner-container">
         <img src={bannerImage} alt="Banner" className="banner" />
+        <h1 className="banner-title">Emily Soriano</h1>
+        </div>
+        <Navigation />
     </header>
 );
 
