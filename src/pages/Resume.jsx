@@ -31,9 +31,15 @@ const Resume = () => {
     return (
         <section>
             <h2>Resume</h2>
-            <a href="/path/to/your/resume.pdf" download>Download Resume</a>
+
+            <a href="/assets/files/Emily Soriano's Resume.pdf" download="Emily Soriano's Resume.pdf" class="resume-link">Download Resume</a>
             
-            <h3>Proficiencies</h3>
+            <p>OR</p>
+            
+            <a href='https://drive.google.com/file/d/1f6KwNeaGwvNssH7OhxHpoLSe9hcIelp0/view?usp=sharing' target='_blank' 
+                rel='noopener noreferrer' class="resume-link">View on Google Drive</a>
+            
+            <h2>Proficiencies</h2>
             <Box sx={{ width: '100%', textAlign: 'center' }}>
                 <Tabs
                     value={value}
@@ -42,6 +48,9 @@ const Resume = () => {
                     centered
                     sx={{
                         '& .MuiTab-root': {
+                            color: 'white',
+                        },
+                        '& .Mui-selected': {
                             color: 'white',
                         },
                         '& .MuiTabs-indicator': {
@@ -59,7 +68,6 @@ const Resume = () => {
                         <li>CSS</li>
                         <li>JavaScript</li>
                         <li>React</li>
-                        <li>Material UI</li>
                     </ul>
                 </TabPanel>
                 <TabPanel value={value} index={1}>
@@ -68,17 +76,14 @@ const Resume = () => {
                         <li>Express</li>
                         <li>MongoDB</li>
                         <li>SQL</li>
-                        <li>Insomnia</li>
                     </ul>
                 </TabPanel>
                 <TabPanel value={value} index={2}>
                     <ul>
-                        <li>GitHub</li>
-                        <li>GitLab</li>
-                        <li>VS Code</li>
-                        <li>Slack</li>
-                        <li>Trello</li>
-                        
+                        <li>Git</li>
+                        <li>Webpack</li>
+                        <li>Docker</li>
+                        <li>Jest</li>
                     </ul>
                 </TabPanel>
             </Box>
