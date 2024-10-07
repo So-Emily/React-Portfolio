@@ -4,6 +4,9 @@
 
 This project is a personal portfolio built using React and Vite. It showcases various projects I have worked on, providing details about each project, including images, descriptions, and links to the deployed applications and their corresponding GitHub repositories. The portfolio is designed with a mobile-first approach and features a clean, polished user interface.
 
+![react-portfolio-img](https://github.com/user-attachments/assets/39a9363c-3f74-4980-b2aa-e8e2f34a8379)
+
+
 ## Table of Contents
 
 - [Installation](#installation)
