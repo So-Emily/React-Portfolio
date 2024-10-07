@@ -122,7 +122,7 @@ const Contact = () => {
                                 }}
                             />
                         </Box>
-                        <Button type="submit" variant="contained" color="primary">
+                        <Button type="submit" variant="contained" color="secondary">
                             Submit
                         </Button>
                     </form>
