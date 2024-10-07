@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Emily Soriano's Portfolio</title>
+
+    <!-- Bootstrap Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <!-- maybe use? -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    
+    <!-- For Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Devicon Icons -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <!-- Person Style sheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body> 
+    <!-- Contacts Fixed to Screen -->
+    <div class="contact-icons bottom-0">
+        <a href="https://github.com/So-Emily" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="right" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/emily-soriano-171a4313a/" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="right" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.twitch.tv/spooki_emy" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="right" title="Twitch"><i class="fab fa-twitch"></i></a>
+        <a href="https://www.instagram.com/spooki_em/" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="right" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/Spooki_Em" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="right" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://discord.gg/6wE6Cgffp2" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="right" title="Boo Land Discord Server"><i class="fab fa-discord"></i></a>
+        <a href="https://steamcommunity.com/id/Spooki_Em/" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="right" title="Steam"><i class="fab fa-steam"></i></a>
+    </div>
+
+    <header>
+        <div class="image-text-container">
+            <img src="assets/images/pixel-purple.gif" class="img-fluid header-img" alt="Purple Pixel Lake Rippling under the sun 💜">
+
+            <!-- Image Text Title -->
+            <div class="centered-text indie-flower-header text-light">Emily's Place</div>
+        </div> 
+
+        <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid justify-content-center">
+                
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link indie-flower-nav  link-offset-3" href="#skills">Tech Stack</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link indie-flower-nav  link-offset-3" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link indie-flower-nav  link-offset-3" href="#about-em-container">About Em</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link indie-flower-nav  link-offset-3" href="#contact-em">Contact Em</a>
+                    </li> -->
+                </ul>
+                <a class="navbar-brand" href="">
+                    <img src="assets/images/boo-hi.png" alt="Logo" width="45" height="45" class="head-name d-inline-block align-text-center">
+                </a>
+            </div>
+        </nav>
+
+        <section class="container-fluid head-title-text">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10">
+                    <h1 class="header-welcome text-light link-offset-1">Welcome!</h1>
+                    <p class="text-light link-offset-1 welcome-text">
+                        This is a place I have created to showcase my coding projects and share my journey in full stack web development.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- Back to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="position-fixed bottom-0 end-0 me-auto">
+        <img class="btn to-top-btn" src="assets/images/to-top-icon.png" alt="Go to top">
+    </button>
+
+    <!-- Line inbetween sections -->
+    <!-- <div class="about-break-line"></div> -->
+
+    <!-- Skills - Tech Stack Section -->
+    <section id="skills">
+        <class="container-fluid">
+            <!-- Skills Title -->
+            <h2 class="skills-header text-light link-offset-1">Tech Stack</h2>
+            <!-- Skills Tabs for Frontend Backend and Others -->
+            <div class="skill-nav-contiainers, max-width:50%;">
+                <ul class="nav nav-pills mb-3 justify-content-center" id="tech-stack" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-frontend-tab" data-bs-toggle="pill" data-bs-target="#pills-frontend" type="button" role="tab" aria-controls="pills-frontend" aria-selected="true">Frontend</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-backend-tab" data-bs-toggle="pill" data-bs-target="#pills-backend" type="button" role="tab" aria-controls="pills-backend" aria-selected="false">Backend</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-others-tab" data-bs-toggle="pill" data-bs-target="#pills-others" type="button" role="tab" aria-controls="pills-others" aria-selected="false">Others</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <!-- Frontend -->
+                    <div class="tab-pane fade show active" id="pills-frontend" role="tabpanel" aria-labelledby="pills-frontend-tab">
+                        <div class="row justify-content-center">
+                            <div class="col-1 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" class="img-fluid skill-img" alt="HTML">
+                                <p class="source-code-pro-text skill-text"></p>
+                            </div>
+                            <div class="col-1 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" class="img-fluid skill-img" alt="CSS">
+                                <p class="source-code-pro-text skill-text"></p>
+                            </div><div class="col-1 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="img-fluid skill-img" alt="JavaScript">
+                                <p class="source-code-pro-text skill-text"></p>
+                            </div>
+                            <div class="col-1 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original-wordmark.svg" class="img-fluid skill-img" alt="jQuery">
+                                <p class="source-code-pro-text skill-text"></p>
+                            </div>
+                            <div class="col-1 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" class="img-fluid skill-img" alt="React">
+                                <p class="source-code-pro-text skill-text"></p>    
+                            </div>
+                            <div class="col-1 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" class="img-fluid skill-img" alt="Bootstrap">
+                                <p class="source-code-pro-text skill-text">Bootstrap</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Backend -->
+                    <div class="tab-pane fade" id="pills-backend" role="tabpanel" aria-labelledby="pills-backend-tab">
+                        <div class="row justify-content-center">
+                            <div class="col-1 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" class="img-fluid skill-img" alt="Node.js">
+                                <p class="source-code-pro-text skill-text"></p>
+                            </div>
+                            <div class="col-1 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodemon/nodemon-original.svg" class="img-fluid skill-img" alt="Nodemon">
+                                <p class="source-code-pro-text skill-text">Nodemon</p>
+                            </div>
+                            <div class="col-1 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" class="img-fluid skill-img" alt="MongoDB">
+                                <p class="source-code-pro-text skill-text">mongoDB</p>
+                            </div>
+                            <div class="col-1 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" class="img-fluid skill-img" alt="postgresql">
+                                <p class="source-code-pro-text skill-text"></p>
+                            </div>    
+    
+                            <div class="col-1 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" class="img-fluid skill-img" alt="Express">
+                                <p class="source-code-pro-text skill-text">express</p>
+                            </div>
+                            <div class="col-1 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/insomnia/insomnia-original.svg" class="img-fluid skill-img" alt="Insomnia">
+                                <p class="source-code-pro-text skill-text">insomnia</p>
+                            </div>
+                        </div>    
+                    </div>  
+                    <!-- Others -->
+                    <div class="tab-pane fade" id="pills-others" role="tabpanel" aria-labelledby="pills-others-tab">
+                        <div class="row justify-content-center">
+                            <div class="col-1 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" class="img-fluid skill-img" alt="Git">
+                                <p class="source-code-pro-text skill-text">Git</p>
+                            </div>
+                            <div class="col-1 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" class="img-fluid skill-img" alt="GitHub">
+                                <p class="source-code-pro-text skill-text"></p>
+                            </div>
+                            <div class="col-1 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original-wordmark.svg" class="img-fluid skill-img" alt="GitLab">
+                                <p class="source-code-pro-text skill-text"></p>
+                            </div>
+                            <div class="col-1 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materializecss/materializecss-original.svg" class="img-fluid skill-img" alt="Materialize CSS">
+                                <p class="source-code-pro-text skill-text">Materialize CSS</p>
+                            </div>
+                            <div class="col-1 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/slack/slack-original.svg" class="img-fluid skill-img" alt="Slack">
+                                <p class="source-code-pro-text skill-text">Slack</p>
+                            </div>
+                            <div class="col-1 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" class="img-fluid skill-img" alt="vscode">
+                                <p class="source-code-pro-text skill-text">VS Code</p>
+                            </div>
+                            <div class="col-1 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/trello/trello-original.svg " class="img-fluid skill-img" alt="Trello">
+                                <p class="source-code-pro-text skill-text">Trello</p>
+                            </div>
+                            <div class="col-1 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" class="img-fluid skill-img" alt="photoshop">
+                                <p class="source-code-pro-text skill-text">Photoshop</p>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </class>    
+    </section>
+
+    <!-- Projects Section -->
+    <section class="container-fluid" id="projects">
+        <!-- Projects Title -->
+        <a href="https://github.com/stars/So-Emily/lists/ems-project-stack" target="_blank" class="projects-header text-light link-offset-1 text-decoration-none" id="projects-main-title">Projects</a>
+        
+        <!-- Projects Container -->
+        <div class="row align-content-center projects-body-container">
+
+            <!-- Project 1 -->
+            <div class="col-12 col-md-5 project-container">
+                <div class="project-title-container">
+                    <a href="https://so-emily.github.io/Weather-You-Need-Clothes/" target="_blank" class="link-offset-2 project-title-link">
+                        <h3 class="project-title">Weather Drip</h3>
+                    </a>
+                </div>
+                <div class="project-text-container">
+                    <img src="assets/images/project-imgs/weather-drip.png" class="img-fluid project-img" alt="Weather Drip - Weather you need clothes snippet">
+                    <div class="project-body">
+                        <p class="source-code-pro-text text-light">
+                            My first coding camp group project!<br> 
+                            A website that combines weather with clothes to wear. For the indecisive traveler.
+                        </p>
+                    </div>
+                    <div class="project-links-container"> <!-- Container for the links -->
+                        <a href="https://github.com/So-Emily/Weather-You-Need-Clothes" target="_blank" class="text-decoration-none project-button">GitHub 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                            </svg>
+                        </a>
+                        <a href="https://so-emily.github.io/Weather-You-Need-Clothes/" target="_blank" class="text-decoration-none project-button">Live Site 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-12 col-md-5 project-container">
+                <div class="project-title-container">
+                    <a href="https://list-it-kw5e.onrender.com" target="_blank" class="link-offset-2 project-title-link">
+                        <h3 class="project-title"> Just List It </h3>
+                    </a>
+                </div>
+                <div class="project-text-container">
+                    <img src="assets/images/project-imgs/list-it-img.png" class="img-fluid project-img" alt="The main homepage of the List It app, a nerds passion organizer">
+                    <div class="project-body">
+                        <p class="source-code-pro-text text-light">
+                            List It is a full stack application, <br> 
+                            that allows users to organize and keep track of their nerdy passions.
+                        </p>
+                    </div>
+                    <div class="project-links-container">
+                        <a href="https://github.com/So-Emily/List-It" target="_blank" class="text-decoration-none project-button">GitHub
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                            </svg>
+                        </a>
+                        <a href="https://list-it-kw5e.onrender.com" target="_blank" class="text-decoration-none project-button">Live Site
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-12 col-md-5 project-container">
+                <div class="project-title-container">
+                    <a href="https://so-emily.github.io/Personal-API-Blog/" target="_blank" class="link-offset-2 project-title-link">
+                        <h3 class="project-title">Personal API Blog</h3>
+                    </a>
+                </div>
+                <div class="project-text-container">
+                    <img src="assets/images/project-imgs/website-blog.png" class="img-fluid project-img" alt="Weather project image">
+                    <div class="project-body">
+                        <p class="source-code-pro-text text-light">
+                            A personal blog web application that allows users to create and read blog posts. 
+                        </p>
+                    </div>
+                    <div class="project-links-container"> <!-- Container for the links -->
+                        <a href="https://github.com/So-Emily/Personal-API-Blog" target="_blank" class="text-decoration-none project-button">GitHub 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                            </svg>
+                        </a>
+                        <a href="https://so-emily.github.io/Personal-API-Blog/" target="_blank" class="text-decoration-none project-button">Live Site 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="col-12 col-md-5 project-container">
+                <div class="project-title-container">
+                    
+                    <a href="https://so-emily.github.io/jQuery-Task-Board/" target="_blank" class="link-offset-2 project-title-link">
+                        <h3 class="project-title">jQuery Task Board</h3>
+                    </a>
+                </div>
+                <div class="project-text-container">
+                    <img src="assets/images/project-imgs/task-website-img.PNG" class="img-fluid project-img" alt="A basic task board using jquery and mute colors">
+                    <div class="project-body">
+                        <p class="source-code-pro-text text-light">
+                            A basic task board using jQuery. A 
+                            way to keep track of tasks.<br> 
+                            Color coded for priority.
+                        </p>
+                    </div>
+                    <div class="project-links-container"> <!-- Container for the links -->
+                        <a href="https://github.com/So-Emily/jQuery-Task-Board" target="_blank" class="text-decoration-none project-button">GitHub 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                            </svg>
+                        </a>
+                        <a href="https://so-emily.github.io/jQuery-Task-Board/" target="_blank" class="text-decoration-none project-button">Live Site 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                            </svg>
+                        </a>
+                    </div>    
+                </div>
+            </div>
+
+
+        </div>
+        <div class="git-stack-link">
+            <a href="https://github.com/stars/So-Emily/lists/ems-project-stack" target="_blank" class="text-light link-offset-1 more-projects-btn">View More Projects</a>
+        </div>
+    </section>
+
+    <!-- Line inbetween sections -->
+        <div class="break-line"></div>
+
+    <!-- About Me Starts w/ Img -->
+    <section class="container-fluid" id="about-em-container">
+        <div class="row justify-content-center">
+            <!-- <div class="col-12 col-sm-2 about-img-container">
+                <img src="assets/images/emily.jpg" class="img-fluid about-img" alt="Emily's profile picture">
+            </div> -->
+            <div class="col-12 col-md-6 about-text-container text-light">
+                <h2 class="indie-flower-header about-title link-offset-1">About Em</h2>
+                <div class="about-body-container">
+                    <p class="source-code-pro-text about-body">
+                        Hello there! My name is Emily Soriano.<br>
+                        
+                        I am born and raised in Seattle, but I live in California at the moment.<br>
+
+                        Currently, I am studying frontend and backend web development with UC Berkeley Extension's Coding Bootcamp.<br>
+
+                        I want to become a full stack developer and work on projects that I am passionate about.<br>
+
+                        Beside my passions for video games, roller skating and my dog, Cleo.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-2 about-img-container">
+                <img src="assets/images/emily.jpg" class="img-fluid about-img" alt="Emily's profile picture">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- <section id="contact-em">
+        <div class="container-fluid">
+            <h2 class="contact-header text-light link-offset-1">Contact Em</h2> 
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 contact-form-container">
+                    <script type="text/javascript" src="https://form.jotform.com/jsform/241898953770070"></script>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+
+    <!-- JS Script Link -->
+    <script src="./js/script.js"></script>
+
+    
+</body>
