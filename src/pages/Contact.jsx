@@ -19,8 +19,8 @@ const Contact = () => {
         <section>
             <Container maxWidth="sm">
                 <Box sx={{ mt: 4 }}>
-                    <Typography variant="h4" component="h2" gutterBottom>
-                        Contact Me
+                    <Typography variant="h4" component="h2" gutterBottom class="contact-title">
+                        Contact Em
                     </Typography>
                     <form onSubmit={handleSubmit}>
                         <Box sx={{ mb: 2 }}>
@@ -122,7 +122,7 @@ const Contact = () => {
                                 }}
                             />
                         </Box>
-                        <Button type="submit" variant="contained" color="primary">
+                        <Button type="submit" variant="contained" color="secondary">
                             Submit
                         </Button>
                     </form>
