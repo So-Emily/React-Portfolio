@@ -3,10 +3,13 @@ import profileImage from '../assets/images/profile.jpg';
 
 const AboutMe = () => (
     <section>
-        <h2>About Em</h2>
+        <h2 class="wiggle">Welcome!</h2>
+
+        {/* <p class="wiggle">Hello there!</p> */}
         
-        <p>Bio about Emily Soriano...</p>
-        
+        <p>This is a place I have created to showcase my coding projects<br></br>
+        and share my journey in full stack web development.</p>
+
         <img src={profileImage} alt="Emily Soriano" className="profile" />
     </section>
 );

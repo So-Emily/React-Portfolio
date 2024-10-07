@@ -51,7 +51,7 @@ const Resume = () => {
                             color: 'white',
                         },
                         '& .Mui-selected': {
-                            color: 'white',
+                            color: 'white !important',
                         },
                         '& .MuiTabs-indicator': {
                             backgroundColor: '#942aeb',
